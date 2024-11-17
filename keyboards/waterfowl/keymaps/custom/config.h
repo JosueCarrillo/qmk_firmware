@@ -1,0 +1,2 @@
+#define MASTER_RIGHT
+#define ENCODER_RESOLUTION 3
