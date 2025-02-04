@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+extern tap_dance_action_t tap_dance_actions[];
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {
         if (clockwise) {
