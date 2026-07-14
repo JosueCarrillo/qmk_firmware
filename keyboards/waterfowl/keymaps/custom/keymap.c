@@ -519,7 +519,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 		break;
 		case  VM_URL:
 			if (record->event.pressed) {
-				SEND_STRING("jcarrillo.vm.dev.etsycloud.com");
+				SEND_STRING("git commit --amend --no-edit");
 			} else {
 				clear_keyboard();
 			}
@@ -544,7 +544,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_NUMS_AND_NAV] = LAYOUT(
 	KC_1, KC_2, KC_3, KC_4, KC_5,				KC_6, KC_7, KC_8, KC_9, KC_0,
 	KC_NO, KC_NO, KC_NO, KC_BACKSPACE, KC_NO, 			KC_ENTER, KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT,
-	KC_TAB, KC_PIPE, KC_CIRCUMFLEX, KC_GRAVE, KC_NO,			KC_EXLM, KC_QUES, KC_QUOT, KC_UNDS, KC_KP_PLUS,
+	KC_TAB, KC_BACKSLASH, KC_PIPE, KC_GRAVE, KC_CIRCUMFLEX,			KC_EXLM, KC_QUES, KC_QUOT, KC_UNDS, KC_KP_PLUS,
 	KC_NO, KC_NO, KC_NO, MO(4), KC_NO, 			KC_NO, KC_NO, KC_NO, KC_NO, KC_NO
 ),
 [_DOUBLE_TROUBLE] = LAYOUT(
